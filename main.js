@@ -65,3 +65,21 @@ const obj3 = Object.assign({}, obj1);
 
 // Metodo estatico create de Object
 const obj4 = Object.create(obj1)
+
+// JSON.stringify y JSON.parse
+
+const ObjetoOriginal = {
+  a_b: 'a',
+  b: 'b',
+  c: {
+    d: 'd',
+    e: 'e'
+  },
+  number: 5,
+  bool: true,
+  name$$$: "hola"
+}
+
+const stringifiedComplexObj = JSON.stringify(ObjetoOriginal);
+
+const ObjetoCopia = JSON.parse(stringifiedComplexObj);
